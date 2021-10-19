@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project 3 Pokemon Game</title>
+        <link rel="stylesheet" href="proj3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="proj3.js"></script>
+    </head>
+    <body>
+        <button type="button" class="home topRow">HOME</button>
+        <button type="button" class="battle topRow">BATTLE</button>
+        <button type="button" class="store topRow">STORE</button>
+        <div id="display" style="height: 100%;"></div>
+        <div style="visibility: hidden;">
+            <input type="radio" id="hm" name="option" value="hm">
+            <label for="contactChoice1">Home</label>
+            <input type="radio" id="bt" name="option" value="bt">
+            <label for="contactChoice2">Battle</label>
+            <input type="radio" id="st" name="option" value="st">
+            <label for="contactChoice3">Store</label>
+        </div>
+        <script src="movement.js"></script>
+        <script src="pokemon.js"></script>
+        <script src="battle.js"></script>
+    </body>
+</html>

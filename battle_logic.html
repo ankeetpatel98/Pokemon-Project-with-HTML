@@ -1,0 +1,33 @@
+<!-- This is a temporary html page to test the function of the battle logic. -->
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./pokemon.js"></script>
+<script src="./battle_logic.js"></script>
+<div id="elem"></div>
+<button type="submit" id="button1" onclick="attack(true)">attack</button>
+<button type="submit" id="button1" onclick="attack(false)">sp attack</button>
+<script type="text/javascript">
+  
+var btns = document.getElementsByTagName("button");
+disableButtons(true);
+setTimeout(function(){
+  disableButtons(false);
+}, 2000);
+
+for(var k=0;k<btns.length;k++){
+
+    btns[k].addEventListener('click', function(){
+        disableButtons(true);
+        setTimeout(function(){disableButtons(false);}, 4000);
+    });    
+}
+function disableButtons(state){
+    for(var k=0;k<btns.length;k++){
+        btns[k].disabled = !!state;    
+    }
+}
+
+</script>
+</html>
